@@ -6,7 +6,7 @@ Repository:https://github.com/ayeshasiddiqa2891999-blip/Careloop-noshow-guard
                 but only 90 apponitments. With a small sample, a few no-shows change the percentage a lot so this is less relaible than those of larger clinics."
 
 -Task 3: Model--> "I chose logistic regression because it had the highest cross-validated ROG-AUC(0.77) and at a threshold of 0.35 it flags 49 out of 198 test bokkings with precision 0.57and recall 0.57."
---Task 4: GenAI --> " Gemini labelled the 9 non-blank notes, and its root causes agreed with the expected ones for 5 notes of 9 notes; 2 notes were 
+--Task 4: GenAI --> " Gemini labelled the 9 non-blank notes, and its root causes agreed with the expected ones for 7 notes of 9 notes; 2 notes were 
 forgot or no reminder; and both belong to appointments where reminder_sent was No. And 3out of 10 notes belong to appointments with reminder_sent=No"
 
  ## Recommendation
