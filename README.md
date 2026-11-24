@@ -2,12 +2,12 @@
 Repository:https://github.com/ayeshasiddiqa2891999-blip/Careloop-noshow-guard
 ## Summary:
 -Task 1: Cleaning ---> " I cleaned the raw booking file from 1020 rows down to 990 rows by removing 20 duplicates and 10 rows with unreadable dates or blank statuses and filled missing ages and distances with the median.
--Task 2:SQL--->"The highest no-show rate among at least 95 appointments, the highest no-show rate was Hadapsar Care Centre in Pune(27.3%), and no-shows rose from 16.2% for bookings made 1-7 days ahead to 60.5% for bookings made31+ days ahead and also I also found out that without having Gomti nagar carepoin(Lucknow) has the highest no-show rate(33.3%)
-                but only 90 apponitments. With a small sample, a few no-shows change the percentage a lot so this is less relaible than those of larger clinics."
+-Task 2:SQL--->"The highest no-show rate among at least 95 appointments, the highest no-show rate was Hadapsar Care Centre in Pune(27.3%), and no-shows rose from 16.2% for bookings made 1-7 days ahead to 60.5% for bookings made31+ days ahead and also I also found out that without having Gomti nagar carepoin(Lucknow) has the highest no-show rate(33.3%)  but only 90 apponitments. With a small sample, a few no-shows change the percentage a lot so this is less relaible than those of larger clinics."
 
 -Task 3: Model--> "I chose logistic regression because it had the highest cross-validated ROG-AUC(0.77) and at a threshold of 0.35 it flags 49 out of 198 test bokkings with precision 0.57and recall 0.57."
 --Task 4: GenAI --> " Gemini labelled the 9 non-blank notes, and its root causes agreed with the expected ones for 7 notes of 9 notes; 2 notes were 
 forgot or no reminder; and both belong to appointments where reminder_sent was No. And 3out of 10 notes belong to appointments with reminder_sent=No"
+--- in the above posted files 01_ingest_clean.ipynb contains task 1 and task 3.
 
  ## Recommendation
 CareLoop should first phone the bookings the model flags on the evening before
