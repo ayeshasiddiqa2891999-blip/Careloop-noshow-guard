@@ -20,6 +20,17 @@ ORDER BY no_show_pct DESC;
 
 
 --task 2.3:
+--with having
+--task 2.2 (with HAVING):
+SELECT s.clinic_name, s.city, COUNT(*) AS appointments, SUM(o.no_show) AS no_shows,
+ROUND(100.0 * SUM(o.no_show) / COUNT(*), 1) AS no_show_pct
+FROM appointments o
+JOIN clinics s ON o.clinic_id = s.clinic_id
+GROUP BY s.clinic_id, s.clinic_name, s.city
+HAVING COUNT(*) >= 95
+ORDER BY no_show_pct DESC;
+
+-- without having
 SELECT CASE  WHEN lead_days <= 7 THEN '1-7'
              WHEN lead_days <= 14 THEN '8-14'
              WHEN lead_days <= 30 THEn '15-30'
